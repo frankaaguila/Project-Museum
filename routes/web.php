@@ -18,11 +18,12 @@ Route::get('prueba',function(){
 Route::get('nombre/{nombre}', function($nombre){
 	return "Mi nombre es ".$nombre;
 });
-*/
 
 Route::get('controlador','PruebaController@index');
 Route::get('name/{nombre}','PruebaController@nombre');
 Route::resource('image','ImageController');
+*/
+Route::resource('product','ProductController');
 
 Route::get('/', function () {
     return view('welcome');

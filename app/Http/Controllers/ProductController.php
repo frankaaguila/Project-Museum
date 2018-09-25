@@ -4,7 +4,7 @@ namespace Museum\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ImageController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        return "Index";
+        //
     }
 
     /**
@@ -23,7 +23,7 @@ class ImageController extends Controller
      */
     public function create()
     {
-        return "Formulario de creación";
+        //
     }
 
     /**

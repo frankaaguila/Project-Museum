@@ -15,7 +15,14 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('description');
+            $table->float('price', 4, 2);
             $table->timestamps();
+            //Foreign Key
+            Schema::enableForeignKeyConstraints();
+            $table->unsignedInteger('type_id');
+            $table->foreign('type_id')->references('id')->on('types');
         });
     }
 
