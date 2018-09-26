@@ -25,6 +25,6 @@ Route::resource('image','ImageController');
 */
 Route::resource('product','ProductController');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontController@index');
+Route::get('contacto', 'FrontController@contacto');
+Route::get('reviews', 'FrontController@reviews');
